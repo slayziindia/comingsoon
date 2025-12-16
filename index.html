@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Slayzi — Coming Soon</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Slayzi  — AI Agents Coming Soon</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 <style>
 * {
@@ -38,7 +38,7 @@ body {
   background: linear-gradient(135deg, #e9c7ff, #c77dff);
   opacity: 0.25;
   transform-style: preserve-3d;
-  animation: cubeFloat 20s linear infinite;
+  animation: cubeFloat 22s linear infinite;
 }
 
 .cube:nth-child(1) { top: 15%; left: 10%; animation-duration: 22s; }
@@ -51,7 +51,7 @@ body {
     transform: rotateX(0deg) rotateY(0deg) translateZ(0);
   }
   100% {
-    transform: rotateX(360deg) rotateY(360deg) translateZ(120px);
+    transform: rotateX(360deg) rotateY(360deg) translateZ(140px);
   }
 }
 
@@ -71,7 +71,7 @@ body {
   border-radius: 28px;
   padding: 48px 38px;
   width: 90%;
-  max-width: 520px;
+  max-width: 540px;
   text-align: center;
   box-shadow: 0 40px 100px rgba(155,77,255,0.35);
   transform-style: preserve-3d;
@@ -79,19 +79,13 @@ body {
 }
 
 /* ===== CONTENT ===== */
-.logo {
-  width: 150px;
-  margin-bottom: 24px;
-  transform: translateZ(60px);
-}
-
 h1 {
   font-size: 3rem;
   font-weight: 800;
   background: linear-gradient(90deg, #9d4edd, #c77dff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  transform: translateZ(55px);
+  transform: translateZ(60px);
 }
 
 .tag {
@@ -104,18 +98,30 @@ h1 {
   font-size: 0.9rem;
   font-weight: 500;
   box-shadow: 0 10px 30px rgba(155,77,255,0.25);
-  transform: translateZ(45px);
+  transform: translateZ(50px);
 }
 
 p {
-  margin-top: 18px;
+  margin-top: 20px;
   font-size: 1.05rem;
   line-height: 1.6;
   color: #4a136f;
+  transform: translateZ(45px);
+}
+
+.features {
+  margin-top: 22px;
+  font-size: 0.95rem;
+  opacity: 0.85;
   transform: translateZ(40px);
 }
 
-/* ===== FORM (FIXED) ===== */
+.features span {
+  display: block;
+  margin: 6px 0;
+}
+
+/* ===== FORM ===== */
 form {
   margin-top: 32px;
   display: flex;
@@ -132,7 +138,6 @@ input {
   font-size: 0.95rem;
   min-width: 240px;
   outline: none;
-  pointer-events: auto;
   box-shadow: 0 12px 30px rgba(155,77,255,0.25);
 }
 
@@ -148,7 +153,7 @@ button {
 }
 
 .footer {
-  margin-top: 28px;
+  margin-top: 30px;
   font-size: 0.85rem;
   opacity: 0.6;
   transform: translateZ(30px);
@@ -173,23 +178,35 @@ button {
 
 <div class="scene">
   <div class="card" id="card">
-    <img src="slayzi logo.jpg" class="logo" alt="Slayzi Logo">
 
-    <h1>SLAYZI</h1>
-    <div class="tag">Pinterest-inspired fashion & accessories</div>
+    <h1>Slayzi </h1>
+
+    <div class="tag">AI agents that work while you sleep</div>
 
     <p>
-      Discover aesthetic dresses and curated accessories designed
-      for soft luxury and Pinterest-core moods.
-      <br>Soft. Stylish. You.
+      We build autonomous AI agents that handle sales,
+      support, CRM updates, follow-ups, and workflows —
+      without human babysitting.
+      <br><br>
+      Plug it in. Let the agent work. Scale faster.
     </p>
 
+    <div class="features">
+      <span>• AI Sales & Lead Agents</span>
+      <span>• WhatsApp & Support Bots</span>
+      <span>• CRM & Reminder Automation</span>
+      <span>• Custom AI Workflows</span>
+    </div>
+
     <form action="https://formspree.io/f/xvgenang" method="POST" id="form">
-      <input type="email" name="email" placeholder="Enter your email" required>
-      <button type="submit">Get Notified</button>
+      <input type="email" name="email" placeholder="Enter your email" required />
+      <button type="submit">Join the Waitlist</button>
     </form>
 
-    <div class="footer">© Slayzi India · Coming Soon</div>
+    <div class="footer">
+      © Slayzi  · AI Agents · Coming Soon
+    </div>
+
   </div>
 </div>
 
